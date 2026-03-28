@@ -1419,6 +1419,7 @@ class JavaScript extends Adapter {
                                 }
                             } else {
                                 // javascript
+                                this.log.info(`${obj._id}: concatenating global script...`);
                                 const sourceCode = obj.common.source;
                                 this.globalScript += `${sourceCode}\n`;
 
